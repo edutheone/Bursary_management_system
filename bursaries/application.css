@@ -1,0 +1,112 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Times New Roman', serif;
+    background: #f4f6f8;
+    padding: 20px;
+    
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: solid white;
+}
+
+.header h2 {
+    color: #004080;
+    margin-bottom: 5px;
+}
+/* FORM CONTAINER */
+form {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
+
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* HEADINGS */
+h1 {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+
+    border-bottom: 2px solid #004080;
+    color: #187fe6;
+}
+
+/* LABELS */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* INPUTS & SELECT */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    font-size: 14px;
+}
+
+/* CHECKBOX */
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* PARAGRAPH */
+p {
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+
+    background: #004080;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #002d5c;
+}
+
+/* SECTION SPACING */
+h1 + label {
+    margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+}
