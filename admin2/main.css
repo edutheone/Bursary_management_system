@@ -1,0 +1,125 @@
+/* General Layout */
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #f0f2f5;
+    color: #1a1a1b;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/* Ward Headers */
+.ward-header {
+    background: #1e293b; /* Dark Slate */
+    color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 8px 8px 0 0;
+    margin: 40px 0 0 0;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Table Styling */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden; /* Clips corners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: none; /* Replaces border=1 */
+}
+
+.admin-table th {
+    background-color: #f8fafc;
+    color: #64748b;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 16px;
+    text-align: left;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.admin-table td {
+    padding: 16px;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.9rem;
+}
+
+.admin-table tr:hover {
+    background-color: #f1f5f9; /* Hover effect for rows */
+}
+
+/* Status Badges */
+.badge {
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge.pending {
+    background-color: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fcd34d;
+}
+
+.badge.approved {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+}
+
+.badge.rejected {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+/* Action Buttons */
+.btn-view {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+    margin-right: 15px;
+    transition: color 0.2s;
+}
+
+.btn-view:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.btn-delete {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.2s;
+}
+
+.btn-delete:hover {
+    background-color: #dc2626;
+}
+
+/* No Data Alert */
+.no-data-alert {
+    background: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 12px;
+    border: 2px dashed #cbd5e1;
+    color: #64748b;
+    max-width: 600px;
+    margin: 100px auto;
+}
+
+.no-data-alert h3 {
+    color: #1e293b;
+    margin-bottom: 5px;
+}

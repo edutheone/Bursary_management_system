@@ -1,0 +1,133 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #333;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.logout {
+    background: #e74c3c;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.logout:hover {
+    background: #c0392b;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+}
+
+/* ===== TABLE SECTION ===== */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 600px; /* prevents table shrinking too much on phones */
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95rem;
+}
+
+table th {
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Action links */
+table td a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons under table */
+.links {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.links a {
+    background: #4a90e2;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.links a:hover {
+    background: #357ABD;
+    transform: translateY(-2px);
+}
+
+/* ===== MOBILE IMPROVEMENTS ===== */
+@media (max-width: 700px) {
+    table {
+        min-width: 100%; /* ensure full width on phone */
+    }
+
+    .table-wrapper {
+        overflow-x: auto;  /* allow sideways scroll if needed */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    td, th {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+}

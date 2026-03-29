@@ -1,0 +1,147 @@
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Headers */
+h2 {
+    color: #1a73e8;
+    font-size: 1.8rem;
+    margin-top: 0;
+    border-bottom: 2px solid #e8eaed;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #5f6368;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background: #f8f9fa;
+    padding: 8px 15px;
+    border-left: 5px solid #1a73e8;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #edf2f7;
+    text-align: left;
+}
+
+table th {
+    width: 35%;
+    background-color: #ffffff;
+    color: #70757a;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+table td {
+    color: #202124;
+    font-weight: 500;
+}
+
+/* Table Row Hover Effect */
+table tr:hover {
+    background-color: #fafafa;
+}
+
+/* Document Links */
+.doc-link {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+}
+
+.doc-link:hover {
+    text-decoration: underline;
+    color: #174ea6;
+}
+
+/* Status Badge */
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 50px;
+    background-color: #e8f0fe;
+    color: #1967d2;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Action Buttons */
+.action-container {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    border-top: 2px solid #f1f3f4;
+    padding-top: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-approve {
+    background-color: #34a853;
+    color: white;
+}
+
+.btn-approve:hover {
+    background-color: #2d8e47;
+    box-shadow: 0 4px 12px rgba(52, 168, 83, 0.3);
+}
+
+.btn-reject {
+    background-color: #ea4335;
+    color: white;
+}
+
+.btn-reject:hover {
+    background-color: #d33426;
+    box-shadow: 0 4px 12px rgba(234, 67, 53, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container { padding: 20px; }
+    table th { width: 45%; }
+    .action-container { flex-direction: column; }
+}
