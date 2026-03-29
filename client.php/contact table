@@ -1,0 +1,7 @@
+create table messages (
+    id int auto_increment primary key,
+    name varchar(100),
+    email varchar(255),
+    message text,
+    created_at timestamp default current_timestamp
+)
